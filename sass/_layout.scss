@@ -236,6 +236,16 @@ img:hover {
   border-radius: 50%;
 }
 
+#erreur img:hover {
+  border-radius: 0;
+  filter: brightness(1.2);
+}
+
+#entete__menu img:hover {
+  border-radius: 0;
+  filter: brightness(1.2);
+}
+
 // Personnalisation des blocks de texte
 // ///////////////////////////////////////////////////////////
 
