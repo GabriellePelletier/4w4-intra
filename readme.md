@@ -1,8 +1,11 @@
-# Labo 5
+# 4w4-Intra | TP2
 
 ### _Auteur: Gabrielle pelletier_
 
-## LIEN VERS LA GITHUB PAGE: https://gabriellepelletier.github.io/4w4-sem2/
+Voici le tp2 pour l'examen intra affichant la page d'erreur 404 lorsque
+l'utilisateur cherche du contenu qui n'existe pas.
+
+## LIEN VERS LA GITHUB PAGE: https://github.com/GabriellePelletier/4w4-intra
 
 # Instructions
 
