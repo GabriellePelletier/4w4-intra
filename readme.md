@@ -5,7 +5,7 @@
 Voici le tp2 pour l'examen intra affichant la page d'erreur 404 lorsque
 l'utilisateur cherche du contenu qui n'existe pas.
 
-## LIEN VERS LA GITHUB PAGE: https://github.com/GabriellePelletier/4w4-intra
+## LIEN VERS LE NOUVEAU DÉPÔT DU TP2: https://github.com/GabriellePelletier/4w4-intra
 
 ## Lien vers le Web Hosting Canada : https://gftnth00.mywhc.ca/tim23/
 
