@@ -1,0 +1,44 @@
+/*
+
+Theme Name: TP2
+Author: Gabrielle Pelletier
+Author URI: https://wordpress.org/
+Description: Thème de base TP2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tp2
+
+*/
+
+// ueygfwugieuwhoij;
+
+// Initiliasiation des variables SASS et CSS
+
+@import "../sass/utile/couleur";
+
+@import "../sass/utile/couleurs-class";
+
+// Base
+
+@import "../sass/layout";
+
+@import "../sass/base/h";
+
+// Effets
+
+@import "../sass/effet/vague";
+
+@import "../sass/effet/diagonal";
+
+@import "../sass/effet/entete";
+
+@import "../sass/effet/bouton";
+
+// Composants
+
+@import "../sass/composant/carte";
+
+@import "../sass/composant/menu";
+
+@import "../sass/composant/search";

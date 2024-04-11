@@ -1,0 +1,290 @@
+// SCSS GÉNÉRAL
+// ///////////////////////////////////////////////////////////
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+}
+
+// Les sélecteurs
+// ///////////////////////////////////////////////////////////
+
+// Block code
+.codeblock {
+  border: 2px solid black;
+  border-radius: 20px;
+
+  background-color: var(--transparence-h);
+  color: rgba(white, var(--transparence-h1-valeur));
+
+  padding: 2%;
+}
+
+.codeblock:hover {
+  background-color: rgba(rgb(97, 89, 74), var(--transparence-h1-valeur));
+}
+
+.global {
+  // min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
+  box-shadow: rgba(255, 94, 0, 0.55) 0px 10px 15px 0px,
+    rgba(35, 71, 180, 0.55) 0px 20px 25px 5px;
+}
+
+.global > .hero {
+  flex: 1;
+  // min-height: auto;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  // border: 1px solid grey;
+  padding: 5rem 1rem;
+  // background-color: rgba(255, 255, 255, 0.2);
+}
+
+.les-leonardo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Section du site web
+// ///////////////////////////////////////////////////////////
+
+#entete,
+#footer {
+  min-height: 20vh;
+}
+
+// #entete__menu {
+//   // background-color: var(--_couleur-arriere-menu);
+// }
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+  color: var(--transparence-h);
+  position: relative;
+  z-index: -2;
+
+  // background-image: url(https://img.freepik.com/photos-gratuite/belles-fleurs-gouttes-eau_23-2150705688.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // filter: opacity(80%);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+  color: var(--transparence-h);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+  color: var(--transparence-h);
+  // z-index: -1;
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--transparence-h);
+
+  overflow: visible;
+}
+
+#erreur {
+  background-color: var(--couleur-arriere-entete);
+  color: var(--transparence-h);
+  position: relative;
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+  color: var(--transparence-h);
+  // z-index: -2;
+}
+
+// Balises de liens (A)
+// ///////////////////////////////////////////////////////////
+
+a {
+  text-decoration: none;
+  color: rgb(222, 131, 2);
+
+  &:hover {
+    text-decoration: underline;
+    color: rgb(119, 41, 5);
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgb(213, 108, 62);
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: rgb(222, 131, 2);
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: rgb(111, 46, 16);
+  }
+}
+
+// Pour le footer
+footer a {
+  text-decoration: none;
+  color: rgb(160, 179, 204);
+
+  &:hover {
+    text-decoration: underline;
+    color: rgb(5, 55, 119);
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgb(123, 148, 200);
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: rgb(90, 138, 251);
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: rgb(113, 135, 176);
+  }
+}
+
+// Pour les liens autres
+a.custom-logo-link {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+
+  overflow: visible;
+}
+
+#erreur a.custom-logo-link {
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 60%;
+  left: 0;
+  z-index: 1;
+
+  overflow: visible;
+
+  @media (max-width: 1142px) {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+// Section balise B
+b {
+  color: var(--couleur-texte-h2);
+}
+
+b:hover {
+  color: var(--couleur-texte-hov);
+}
+
+// Code pour les images sur la page
+// ///////////////////////////////////////////////////////////
+
+img {
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+
+  transition: 1s;
+}
+
+#erreur img {
+  padding-left: 5%;
+  width: 400px;
+  height: 400px;
+
+  @media (max-width: 1142px) {
+    display: none;
+  }
+}
+
+img:hover {
+  filter: brightness(1.2);
+  border-radius: 50%;
+}
+
+// Personnalisation des blocks de texte
+// ///////////////////////////////////////////////////////////
+
+.block-texte {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.contenu-erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  // border: 1px solid red;
+}
+
+.conteneur-erreur {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  // border: 5px solid blue;
+}
+
+// Menu NB de personnes
+// ///////////////////////////////////////////////////////////
+
+#evenement ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow-y: visible;
+}
+
+#evenement li {
+  overflow: hidden;
+}
+
+#erreur ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  // overflow-y: visible;
+}
+
+#erreur .montre-categ {
+  @media (max-width: 1142px) {
+    width: 70%;
+  }
+}

@@ -1,0 +1,47 @@
+// Premiere vague
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 150px;
+}
+
+.vague .shape-fill {
+  // fill: linear-gradient(var(--couleur-arriere-accueil), rgba(255, 255, 255, 0));
+  fill: var(--couleur-arriere-accueil);
+}
+
+// Deuxième vague
+.vague2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.vague2 svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.vague2 .shape-fill {
+  fill: var(--couleur-arriere-evenement);
+}

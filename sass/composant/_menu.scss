@@ -1,0 +1,100 @@
+// Feuille de style du menu principal
+
+// Partie des menus
+// ///////////////////////////////////////////////////////////
+.menu-principal-container {
+  //nav
+  background: rgb(8, 7, 74);
+  background: linear-gradient(
+    90deg,
+    rgb(6, 128, 210) 0%,
+    var(--couleur-arriere-entete) 40%
+  );
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  position: absolute;
+  width: 100%;
+  top: 10%;
+
+  transition: 2s;
+
+  @media (max-width: 1142px) {
+    // flex-direction: row;
+    width: 50%;
+
+    // background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translateX(-200%);
+  }
+
+  .menu {
+    // position: absolute;
+    // display: flex;
+
+    list-style-type: none;
+    line-height: 200%;
+    width: 70%;
+    // flex-direction: column;
+
+    //ul
+    @media (min-width: 1142px) {
+      // position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      // transform: translateX(0);
+    }
+    // display: none;
+  }
+
+  // .menu-item {
+  //   //li
+  // }
+
+  .menu-item a {
+    //a
+    font-size: large;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+  }
+
+  .menu-item a:hover {
+    //a:hover
+    color: var(--couleur-texte-h2);
+  }
+}
+
+.menu-principal-container:hover {
+  background: rgb(255, 177, 54);
+  background: linear-gradient(
+    90deg,
+    rgb(25, 145, 225) 0%,
+    var(--couleur-arriere-entete) 35%
+  );
+}
+
+// Gestion du label #burger (l'image svg est dans le label)
+// ///////////////////////////////////////////////////////////
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  @media (min-width: 1142px) {
+    display: none;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+
+#chk_burger:checked ~ .menu-principal-container {
+  transform: translateX(25%);
+}

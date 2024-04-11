@@ -1,0 +1,35 @@
+#entete__menu .la_barre {
+  top: 20%;
+  right: 0px;
+  left: auto;
+
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  overflow: visible;
+
+  @media (max-width: 1142px) {
+    display: none;
+  }
+}
+
+.la_barre {
+  left: 11%;
+  width: 50%;
+  height: 2%;
+  position: relative;
+  overflow: visible;
+
+  @media (max-width: 1142px) {
+    display: none;
+  }
+}
+
+.recherche__input {
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.recherche {
+  overflow: visible;
+}
