@@ -102,6 +102,7 @@ body {
   overflow: visible;
 }
 
+// Ajout d'une section seulement pour la page d'erreur!
 #erreur {
   background-color: var(--couleur-arriere-entete);
   color: var(--transparence-h);
@@ -180,6 +181,8 @@ a.custom-logo-link {
   overflow: visible;
 }
 
+// Le logo de la page d'erreur ne doit pas être affecté
+//par celui du header.
 #erreur a.custom-logo-link {
   display: flex;
   position: relative;
@@ -245,6 +248,7 @@ img:hover {
   margin-bottom: 1%;
 }
 
+// Mettre le contenu de la page d'erreur en "column"
 .contenu-erreur {
   display: flex;
   flex-direction: column;
@@ -254,6 +258,7 @@ img:hover {
   // border: 1px solid red;
 }
 
+// Mettre tout les éléments de la page d'erreur en "row"
 .conteneur-erreur {
   display: flex;
   align-items: center;
@@ -275,6 +280,8 @@ img:hover {
   overflow: hidden;
 }
 
+// N'affecte que la page d'erreur par rapport aux éléments listés
+// (les catégories)
 #erreur ul {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +290,7 @@ img:hover {
   // overflow-y: visible;
 }
 
+// Permet d'aligner les catégories sur la page d'erreur seulement
 #erreur .montre-categ {
   @media (max-width: 1142px) {
     width: 70%;

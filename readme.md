@@ -9,16 +9,14 @@ l'utilisateur cherche du contenu qui n'existe pas.
 
 # Instructions
 
-- Compléter l'utilisation du mapping avec boucle et mixin
-- Changer le titre et la description
-- Dans la page d'accueil on voit uniquement les destinations "populaires"
-- Chaque destination contient les catégories associées.
-  - Améliorer l'apparence de la liste des catégories associées
-  - Améliorer l'apparence de chacune des cartes
-- Afficher des cartes de catégories pour l'ensemble des catégories
-  - Titre de la catégorie
-  - 10 premiers mot de la description
-  - Un lien permet d'accéder à la liste des destinations de cette catégorie
-  - Le nombre d'article pour cette catégorie
-  - Créer github page : index.html (front-page.php)
-    - Ajouter l'addresse de la github-page dans votre read.me
+Description et barème
+Contenu (10 points)
+
+- Titre principal, sous-titre, texte et format général (3 points)
+- Une image de la librairie média est intégrée dans le model,
+  cette image disparaît sur écran mobile (2 points)
+- Formulaire de recherche fonctionnel reproduit comme sur la maquette (3 points)
+- La liste des catégories de destinations sous la forme de lien (2 points)
+  Caractéristiques (5 points )
+- La page s'adapte à différentes largeurs d'écran (3 points)
+- La page reproduit fidèlement la maquette (2 points)
