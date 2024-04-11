@@ -219,6 +219,8 @@ img {
   transition: 1s;
 }
 
+// On formate l'image du logo à droite de la page d'erreur
+// afin que celui-ci n'apparaisent pas sur mobile.
 #erreur img {
   padding-left: 5%;
   width: 400px;

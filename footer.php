@@ -9,6 +9,9 @@
           de transport et d'activités. Nous atteignons le ciel en appliquant un processus pratique, 
           fluide et agréable à nos clients, tout en les aidant à créer des souvenirs et des moments inoubliables.</p>
           <br>
+          <!-- <?php echo get_search_form(); ?>
+          <br> -->
+          <!-- Barre de recherche du footer non fonctionnel. -->
           <?php wp_nav_menu(array( "menu" => "footer",'container' => 'div')); ?>
           <br>
           <div class="les-reseaux">
