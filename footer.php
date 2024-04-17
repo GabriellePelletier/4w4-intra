@@ -25,5 +25,6 @@
         <p class="copyright">Copyright © 2024 mars - Le petit Voyage</p>
       </footer>
     </div>
+    <?php wp_footer(); ?>
   </body>
 </html>
