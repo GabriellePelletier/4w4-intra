@@ -3,8 +3,9 @@
 <?php get_header(); ?>
 
     <div id="accueil" class="global">
-      <section>
-        <h2>Accueil <b>(h2)</b></h2>
+    <section>
+        <h2>Voici le voyage que vous avez sélectionné :</h2>
+        <br>
           <div class="destinations">
         <?php
 
@@ -30,21 +31,41 @@
         <br>
         <br />
         <h4>
-          Their could can widen ten she any. As so we smart those money in. Am
-          wrote up whole so tears sense oh. Absolute required of reserved in
-          offering no. How sense found our those gay again taken the. Had mrs
-          outweigh desirous sex overcame. Improved property reserved disposal do
-          offering me. (h4)
+          Les voyage vous sont offert par catégories selon vos préférences ou vos plans! 
+          Vous avez des questions pour nous? Contactez-nous via le lien dans le bas
+          de la page afin de parler avec un conseiller de voyage! Notre plateforme vous 
+          offre des voyages selon leur popularité à chaque saison, restez à l'alerte pour nos
+          prochaines offres!
         </h4>
         <br>
-        <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
+        <h4>Lien de la page github: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/tp1">
           https://github.com/GabriellePelletier/4w4-sem2/tree/labo3</a></h4>
         <br>
+        <h2><b>Voyez nos catégories de destinations!</b></h2>
+        <br>
+        <div class="gerer-cat">
+        <?php
+         $categories = get_categories();
+         
+         foreach ($categories as $category) {
+           ?>
+           <div class="carte">
+             <h2 class="title"><a href="<?php  ?>"><?php echo $category->name; ?></a></h2>
+             <p><?php echo wp_trim_words(category_description( get_category_by_slug($category->slug)->term_id ), 10); ?></p>
+            </div>
+             
+             <?php } ?>
+        </div>
       </section>
     </div>
+
+    <!-- //////////////////////// SECTION ÉVÈNEMENT //////////////////////// -->
     <div id="evenement" class="global">
       <section>
-        <h2>Événement <b>(h2)</b></h2>
+        <h2>Événement</h2>
+        <br>
+          <?php wp_nav_menu(array( "menu" => "NBPersonnes",'container' => 'div')); ?>
+        <br>
         <h5>
           Article evident arrived express highest men did boy. Mistress sensible
           entirely am so. Quick can manor smart money hopes worth too. Comfort
@@ -55,32 +76,68 @@
           <a href="https://www.randomtextgenerator.com/"
             >https://www.randomtextgenerator.com/</a
           >
-          (h5)
+          
         </h5>
         <br />
+
         <h6>
           Surprise steepest recurred landlord mr wandered amounted of.
           Continuing devonshire but considered its. Rose past oh shew roof is
           song neat. Do depend better praise do friend garden an wonder to.
           Intention age nay otherwise but breakfast. Around garden beyond to
-          extent by. (h6)
+          extent by. 
         </h6>
         <br>
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/img_logo_random.jpeg" alt="logo" />
+        <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/leplanemodel.jpg" alt="logo" />
+        <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/eclipseplane.jpg" alt="logo" />
+        <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/tripleplane.jpg" alt="logo" />
       </section>
     </div>
     
+    <!-- //////////////////////// SECTION GALERIE //////////////////////// -->
     <div id="galerie" class="global diagonal">
       <section>
-        <h2>Galerie <b>(h2)</b></h2>
+        <h2>Galerie</h2>
+        <br>
+        <section>
+          <h3>Les destinations par catégorie</h3>
+          <article class="gerer-cat">
+          <?php
+            // $categories = get_categories();
+            foreach ($categories as $elm_categories) {
+              $nom = $elm_categories -> name;
+              $description = wp_trim_words($elm_categories -> description, 10);
+              $nombre_destinations = $elm_categories -> count;
+            ?>
+            <div class="carte">
+              <?php the_post_thumbnail('thumbnail'); ?>
+              <h3><?php echo $nom; ?></h3>
+              <p><?php echo $description ?></p>
+              <p>Nombre de destinations : <b><?php echo $nombre_destinations; ?></b></p>
+              <a href="<?php echo get_permalink() ?>">Voir plus</a>
+            </div>
+            <?php } ?>
+          </article>
+        </section>
+        <br>
         <h5 class="codeblock">
-          Way nor furnished sir procuring therefore but. Warmth far manner
-          myself active are cannot called. Set her half end girl rich met. Me
-          allowance departure an <b>curiosity</b> ye. In no talking address
-          excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic. (h5)
-        </h5>
-        <br />
+        The traveling agency is thrilled to announce that the destination they are 
+        selling out is a hidden gem waiting to be explored. With pristine beaches, 
+        vibrant culture, and delicious cuisine, this destination offers a unique and 
+        unforgettable experience for travelers. From thrilling outdoor adventures to 
+        relaxing beachside retreats, this destination has something for everyone. 
+        Don't miss the chance to discover the beauty and charm of this incredible place 
+        with the help of our expertly crafted travel packages.
+      </h5>
+      <br>
+      <div class="les-leonardo">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/tropic.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/waterfall.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/batiment.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/caprio.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/debene.jpg" alt="">
+      </div>
+      <br>
         <h6 class="codeblock">
           Surprise steepest recurred landlord mr wandered amounted of.
           Continuing devonshire but considered its. Rose past oh shew roof is
@@ -98,15 +155,12 @@
           prevailed suspected am as. Add stairs admire all answer the nearer yet
           length. Advantages prosperous remarkably my inhabiting so reasonably
           be if. Too any appearance announcing <b>impossible</b> one. Out mrs
-          means heart ham tears shall power every. (h6)
+          means heart ham tears shall power every.
         </h6>
         <br />
-        <button class="lebouton">
-          <a
-            href="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&index=1"
-            >Voir plus</a
-          >
-        </button>
+        <br>
+        <a href="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&index=1"><button class="lebouton">Voir plus</button></a>
       </section>
     </div>
-    <?php get_footer(); ?>
+
+<?php get_footer(); ?>
