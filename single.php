@@ -23,6 +23,9 @@
             <div class="carte">
               <h2><?php the_title(); ?></h2>
               <p><?php echo wp_trim_words(the_content(), 10); ?></p>
+              <p>Température minimum : <?php the_field('temperature_minimum'); ?></p>
+              <p>Température maximum : <?php the_field('temperature_maximum'); ?></p>
+              <p>Ville avoisinante : <?php the_field('ville_avoisinante'); ?></p>
               <a href="<?php the_permalink(); ?>">Suite</a>
             </div>
           <?php endif; ?>
