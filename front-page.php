@@ -54,6 +54,7 @@
           de la page afin de parler avec un conseiller de voyage! Notre plateforme vous 
           offre des voyages selon leur popularité à chaque saison, restez à l'alerte pour nos
           prochaines offres!
+          
         </h4>
         <br>
         <h4>Lien de la page github: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/tp1">
@@ -108,6 +109,9 @@
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/leplanemodel.jpg" alt="logo" />
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/eclipseplane.jpg" alt="logo" />
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/tripleplane.jpg" alt="logo" />
+
+        <?php // Appel du shortcode directement dans le fichier front-page.php
+              echo do_shortcode('[em_destination]');?>
       </section>
     </div>
     
