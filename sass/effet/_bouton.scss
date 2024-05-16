@@ -1,7 +1,7 @@
 // Code pour les boutons sur la page
 // ///////////////////////////////////////////////////////////
 
-button {
+.lebouton {
   font-size: clamp(0.938rem, 0.75rem + 0.6vw, 1.125rem);
   padding: 1.5%;
   background-image: linear-gradient(130deg, white, rgb(217, 198, 186));
@@ -9,7 +9,7 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+.lebouton:hover {
   background-image: linear-gradient(
     120deg,
     rgb(186, 186, 186),
@@ -18,7 +18,7 @@ button:hover {
   transform: translateY(-10px);
 }
 
-button:active {
+.lebouton:active {
   background-image: linear-gradient(
     120deg,
     rgb(233, 217, 200),

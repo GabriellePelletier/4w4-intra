@@ -9,8 +9,10 @@
           de transport et d'activités. Nous atteignons le ciel en appliquant un processus pratique, 
           fluide et agréable à nos clients, tout en les aidant à créer des souvenirs et des moments inoubliables.</p>
           <br>
-          <!-- <?php echo get_search_form(); ?>
-          <br> -->
+          <?php echo get_search_form(); ?>
+          <p class="copyright">Page conçue par Gabrielle Pelletier.</p>
+          <br>
+          <br>
           <!-- Barre de recherche du footer non fonctionnel. -->
           <?php wp_nav_menu(array( "menu" => "footer",'container' => 'div')); ?>
           <br>
@@ -23,6 +25,8 @@
           </div>
           <br>
           <p class="copyright"><a href="https://github.com/GabriellePelletier/4w4-intra">Lien du nouveau dépôt github</a></p>
+          <p class="copyright"><a href="https://github.com/GabriellePelletier/carrousel-2024">Lien de l'ancien dépôt github</a></p>
+          <br>
         <p class="copyright">Copyright © 2024 mars - Le petit Voyage</p>
       </footer>
     </div>

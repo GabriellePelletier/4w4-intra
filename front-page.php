@@ -32,15 +32,15 @@
 
           if(have_posts()):
             while(have_posts()): the_post(); 
-            $titre = get_the_title();
-
+            // $titre = get_the_title();
             ?>
-            <div class="carte">
-              <h3><?php the_title(); ?></h3>
-              <?php get_the_category(); ?>
-              <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
-              <a href="<?php echo get_permalink(); ?>">Suite</a>
-            </div>
+            <?php
+              $ma_carte = "carte";
+              if(in_category('galerie')){
+                $ma_carte = "galerie";
+              }
+
+              get_template_part("gabarits/categorie", $ma_carte); ?>
 
             <?php endwhile; ?>
           <?php endif; ?>
@@ -109,9 +109,11 @@
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/leplanemodel.jpg" alt="logo" />
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/eclipseplane.jpg" alt="logo" />
         <img src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/tripleplane.jpg" alt="logo" />
-
+          <br>
+          <br>
         <?php // Appel du shortcode directement dans le fichier front-page.php
               echo do_shortcode('[em_destination]');?>
+          <br>
       </section>
     </div>
     
