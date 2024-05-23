@@ -11,20 +11,14 @@
         <div class="block-texte">
           <h2><b>Auteure: Gabrielle Pelletier</b></h2>
             <br>
-          <h2>
-            4W4 - Conception d'interface
-              <span class="leblockspan">et développement Web</span>
-          </h2>
           <h3>TIM - Collège de Maisonneuve</h3>
-          <h4>Le but du Labo 3 est de nous permettre d'expérimenter avec une base de donnée, d'ajouter du 
-          php (générer du html à l'aide du php) et générer du css directement avec sass.</h4>
         </div>
         <button class="lebouton">Évènements</button>
       </header>
     </div>
     <div id="accueil" class="global">
       <section>
-        <h2>Accueil <b>(h2)</b></h2>
+        <h2>Accueil</h2>
           <div class="destinations">
         <?php
           if(have_posts()):
@@ -34,7 +28,9 @@
             ?>
             <div class="carte">
               <h3><?php echo $titre; ?></h3>
-              <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+              <p><?php echo (get_the_content()); ?></p>
+              <p>Adresse : <?php the_field('adresse'); ?></p>
+              <p>Adresse : <?php the_field('date'); ?></p>
             </div>
 
             <?php endwhile; ?>
@@ -48,7 +44,7 @@
           wrote up whole so tears sense oh. Absolute required of reserved in
           offering no. How sense found our those gay again taken the. Had mrs
           outweigh desirous sex overcame. Improved property reserved disposal do
-          offering me. (h4)
+          offering me.
         </h4>
         <br>
         <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
@@ -56,43 +52,15 @@
         <br>
       </section>
     </div>
-    <div id="evenement" class="global">
-      <section>
-        <h2>Événement <b>(h2)</b></h2>
-        <h5>
-          Article evident arrived express highest men did boy. Mistress sensible
-          entirely am so. Quick can manor smart money hopes worth too. Comfort
-          produce husband boy her had hearing. Law others theirs passed but
-          wishes. You day real less till dear read. Considered use dispatched
-          melancholy sympathize discretion led. Oh feel if up to till like. Voir
-          le lien:
-          <a href="https://www.randomtextgenerator.com/"
-            >https://www.randomtextgenerator.com/</a
-          >
-          (h5)
-        </h5>
-        <br />
-        <h6>
-          Surprise steepest recurred landlord mr wandered amounted of.
-          Continuing devonshire but considered its. Rose past oh shew roof is
-          song neat. Do depend better praise do friend garden an wonder to.
-          Intention age nay otherwise but breakfast. Around garden beyond to
-          extent by. (h6)
-        </h6>
-        <br>
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/img_logo_random.jpeg" alt="logo" />
-      </section>
-    </div>
-    
     <div id="galerie" class="global diagonal">
       <section>
-        <h2>Galerie <b>(h2)</b></h2>
+        <h2>Galerie</h2>
         <h5 class="codeblock">
           Way nor furnished sir procuring therefore but. Warmth far manner
           myself active are cannot called. Set her half end girl rich met. Me
           allowance departure an <b>curiosity</b> ye. In no talking address
           excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic. (h5)
+          me to domestic.
         </h5>
         <br />
         <h6 class="codeblock">
@@ -112,7 +80,7 @@
           prevailed suspected am as. Add stairs admire all answer the nearer yet
           length. Advantages prosperous remarkably my inhabiting so reasonably
           be if. Too any appearance announcing <b>impossible</b> one. Out mrs
-          means heart ham tears shall power every. (h6)
+          means heart ham tears shall power every.
         </h6>
         <br />
         <button class="lebouton">
@@ -123,10 +91,4 @@
         </button>
       </section>
     </div>
-    <div id="footer" class="global">
-      <footer>
-        <h2>Footer <b>(h2)</b></h2>
-      </footer>
-    </div>
-  </body>
-</html>
+    <?php get_footer(); ?>

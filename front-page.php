@@ -17,7 +17,7 @@
           <h4>Bienvenue sur le suite de votre compagnie de voyage locale! Elle vous offre des 
             destinations de rêve autour du monde à découvrir! Au plaisir de vous revoir!</h4>
         </div>
-        <button class="lebouton">Évènements</button>
+        <a href="https://gftnth00.mywhc.ca/tim23/conference/"><button class="lebouton">Inscription</button></a>
       </header>
     </div>
 
@@ -182,7 +182,7 @@
         </h6>
         <br />
         <br>
-        <a href="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&index=1"><button class="lebouton">Voir plus</button></a>
+        <a href="https://gftnth00.mywhc.ca/tim23/conference/"><button class="lebouton">Inscription</button></a>
       </section>
     </div>
 

@@ -1,0 +1,7 @@
+<?php
+    /**
+     * 
+     * Template name: Conférence
+     * 
+     */
+?>
