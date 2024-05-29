@@ -170,6 +170,7 @@ Text Domain: tp2
   --couleur-evenement: var(--couleur-arriere-accueil);
   --couleur-galerie: var(--couleur-arriere-accueil);
   --couleur-texte-h2: hsl(var(--u2), 90%, 30%);
+  --couleur-texte-h3: hsl(var(--u2), 90%, 50%);
   --couleur-texte-hov: hsl(var(--u2), 80%, 50%);
   --bouton-couleur1: hsl(var(--u2), 80%, 50%);
   --bouton-couleur2: hsl(var(--u2), 20%, 70%);
@@ -445,6 +446,19 @@ img:hover {
   overflow: hidden;
 }
 
+.contenu__restapi {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenu__restapi button {
+  padding: 2px 5px;
+}
+
+.restapi_carte {
+  flex: 1 0 250px;
+}
+
 #erreur ul {
   display: flex;
   flex-wrap: wrap;
@@ -675,6 +689,12 @@ h6 {
   border: 1px solid var(--couleur-texte-h2);
   border-radius: 10px;
   background-color: var(--couleur-arriere-footer);
+  transition: border-radius 0.5s, border 0.5s;
+}
+
+.carte:hover {
+  border-radius: 30px;
+  border: 1px solid var(--couleur-texte-h3);
 }
 
 .post-categories {

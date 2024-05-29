@@ -27,6 +27,8 @@
           <p class="copyright"><a href="https://github.com/GabriellePelletier/4w4-intra">Lien du nouveau dépôt github</a></p>
           <p class="copyright"><a href="https://github.com/GabriellePelletier/carrousel-2024">Lien de l'ancien dépôt github</a></p>
           <br>
+          <p class="copyright">Ce site est une page en lien avec le cours de 4w4 utilisant Wordpress.</p>
+          <p class="copyright"><a href="https://www.cmaisonneuve.qc.ca/">Collège de Maisonneuve | 3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 </a></p>
         <p class="copyright">Copyright © 2024 mars - Le petit Voyage</p>
       </footer>
     </div>

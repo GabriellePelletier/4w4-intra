@@ -20,6 +20,12 @@
   border: 1px solid var(--couleur-texte-h2);
   border-radius: 10px;
   background-color: var(--couleur-arriere-footer);
+  transition: border-radius 0.5s, border 0.5s;
+}
+
+.carte:hover {
+  border-radius: 30px;
+  border: 1px solid var(--couleur-texte-h3);
 }
 
 .post-categories {

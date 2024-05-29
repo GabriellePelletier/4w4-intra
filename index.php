@@ -7,18 +7,19 @@
       <?php get_template_part("gabarits/vague"); ?>
       <!-- Fin vague -->
       <header class="entete__header">
-        <h1>4W4 - Gabrielle <b>| Catégorie</b></h1>
+        <h1>Le petit voyage <b>| Catégorie</b></h1>
         <div class="block-texte">
           <h2><b>Auteure: Gabrielle Pelletier</b></h2>
             <br>
           <h3>TIM - Collège de Maisonneuve</h3>
+          <h5>Bienvenue sur le suite de votre compagnie de voyage locale! Elle vous offre des destinations de rêve autour du monde à découvrir! Au plaisir de vous revoir!</h5>
         </div>
         <button class="lebouton">Évènements</button>
       </header>
     </div>
     <div id="accueil" class="global">
       <section>
-        <h2>Accueil</h2>
+        <h2>Évènements de voyage</h2>
           <div class="destinations">
         <?php
           if(have_posts()):
@@ -47,22 +48,52 @@
           offering me.
         </h4>
         <br>
-        <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
-          https://github.com/GabriellePelletier/4w4-sem2/tree/labo3</a></h4>
         <br>
       </section>
     </div>
     <div id="galerie" class="global diagonal">
       <section>
         <h2>Galerie</h2>
+        <br>
+        <section>
+          <h3>Les destinations par catégorie</h3>
+          <article class="gerer-cat">
+          <?php
+            // $categories = get_categories();
+            foreach ($categories as $elm_categories) {
+              $nom = $elm_categories -> name;
+              $description = wp_trim_words($elm_categories -> description, 10);
+              $nombre_destinations = $elm_categories -> count;
+            ?>
+            <div class="carte">
+              <?php the_post_thumbnail('thumbnail'); ?>
+              <h3><?php echo $nom; ?></h3>
+              <p><?php echo $description ?></p>
+              <p>Nombre de destinations : <b><?php echo $nombre_destinations; ?></b></p>
+              <a href="<?php echo get_permalink() ?>">Voir plus</a>
+            </div>
+            <?php } ?>
+          </article>
+        </section>
+        <br>
         <h5 class="codeblock">
-          Way nor furnished sir procuring therefore but. Warmth far manner
-          myself active are cannot called. Set her half end girl rich met. Me
-          allowance departure an <b>curiosity</b> ye. In no talking address
-          excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic.
-        </h5>
-        <br />
+        The traveling agency is thrilled to announce that the destination they are 
+        selling out is a hidden gem waiting to be explored. With pristine beaches, 
+        vibrant culture, and delicious cuisine, this destination offers a unique and 
+        unforgettable experience for travelers. From thrilling outdoor adventures to 
+        relaxing beachside retreats, this destination has something for everyone. 
+        Don't miss the chance to discover the beauty and charm of this incredible place 
+        with the help of our expertly crafted travel packages.
+      </h5>
+      <br>
+      <div class="les-leonardo">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/tropic.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/waterfall.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/batiment.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/caprio.jpg" alt="">
+        <img class="codeblock" src="https://gftnth00.mywhc.ca/tim23/wp-content/uploads/2024/04/debene.jpg" alt="">
+      </div>
+      <br>
         <h6 class="codeblock">
           Surprise steepest recurred landlord mr wandered amounted of.
           Continuing devonshire but considered its. Rose past oh shew roof is
@@ -83,12 +114,8 @@
           means heart ham tears shall power every.
         </h6>
         <br />
-        <button class="lebouton">
-          <a
-            href="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&index=1"
-            >Voir plus</a
-          >
-        </button>
+        <br>
+        <a href="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&index=1"><button class="lebouton">Voir plus</button></a>
       </section>
     </div>
     <?php get_footer(); ?>

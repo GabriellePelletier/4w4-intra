@@ -5,7 +5,13 @@
 Voici le tp2 pour l'examen intra affichant la page d'erreur 404 lorsque
 l'utilisateur cherche du contenu qui n'existe pas.
 
+## Profil Étudiant sur Github: https://github.com/GabriellePelletier
+
 ## LIEN VERS LE NOUVEAU DÉPÔT DU TP2: https://github.com/GabriellePelletier/4w4-intra
+
+## LIEN VERS LE DÉPÔT DU CARROUSEL: https://github.com/GabriellePelletier/carrousel-2024
+
+## LIEN VERS LE DÉPÔT DU WP-CONTENT: https://github.com/GabriellePelletier/wp-content-2024
 
 ## Lien vers le Web Hosting Canada : https://gftnth00.mywhc.ca/tim23/
 

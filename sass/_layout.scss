@@ -297,6 +297,20 @@ img:hover {
   overflow: hidden;
 }
 
+.contenu__restapi {
+  display: flex;
+  justify-content: space-around;
+  // gap: 2rem;
+}
+
+.contenu__restapi button {
+  padding: 2px 5px;
+}
+
+.restapi_carte {
+  flex: 1 0 250px;
+}
+
 // N'affecte que la page d'erreur par rapport aux éléments listés
 // (les catégories)
 #erreur ul {
