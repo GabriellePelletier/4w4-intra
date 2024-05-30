@@ -301,6 +301,7 @@ img:hover {
   display: flex;
   justify-content: space-around;
   // gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .contenu__restapi button {
