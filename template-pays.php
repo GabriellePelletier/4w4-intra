@@ -1,4 +1,12 @@
 <!-- Front page - page qui affiche les produits au total -->
+<?php
+    /**
+     * 
+     * Template name: Pays template
+     * 
+     */
+?>
+
 
 <?php get_header(); ?>
 
@@ -7,12 +15,10 @@
       <?php get_template_part("gabarits/vague"); ?>
       <!-- Fin vague -->
       <header class="entete__header">
-        <h1><?php echo get_bloginfo("name"); ?></h1>
+        <h1>Les plus beaux pays</h1>
         <h2><?php echo get_bloginfo("description") ?></h2>
         <!-- <h1>Thème du groupe #1 sem2 <b>(h1)</b></h1> -->
         <div class="block-texte">
-          <h2><b>Les plus beaux pays</b></h2>
-            <br>
           <h3>TIM - Collège de Maisonneuve</h3>
           <h4>Des voyages de plus en plus populaire après les évènements des années passées, 
             nous vous présentons ici les plus beaux pays touchés par le tourisme étant de 
