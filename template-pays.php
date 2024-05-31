@@ -30,7 +30,7 @@
 
     <!-- //////////////////////// SECTION DU SHORT CODE ICI //////////////////////// -->
 
-    <?php echo do_shortcode('[em_destination]');?>
+    <?php echo do_shortcode('[em_pays]');?>
 
     <!-- //////////////////////// SECTION ACCUEIL //////////////////////// -->
     <div id="accueil" class="global">
@@ -44,6 +44,7 @@
           if(have_posts()):
             while(have_posts()): the_post(); 
             // $titre = get_the_title();
+            echo wp_trim_words(the_content(), 50); 
             ?>
             <?php
               $ma_carte = "carte";
@@ -52,6 +53,7 @@
               }
 
               get_template_part("gabarits/categorie", $ma_carte); ?>
+
 
             <?php endwhile; ?>
           <?php endif; ?>
